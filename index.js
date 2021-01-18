@@ -18,7 +18,7 @@ Toolkit.run(async tools => {
 
   // Add the label
   await createLabel(tools)
-  await addLabel(tools)
+  await addLabel(tools, amount)
   tools.log.success('Label successfully applied. Have a nice day!')
 }, {
   event: [
