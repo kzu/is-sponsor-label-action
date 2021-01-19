@@ -10,15 +10,15 @@ Toolkit.run(async tools => {
   const nodeId = getAuthorNodeId(tools.context.payload)
 
   // Check if the user is a sponsor
-  const isSponsor = await userIsSponsor(tools, nodeId)
-  if (!isSponsor) {
+  const sponsorAmount = await userIsSponsor(tools, nodeId)
+  if (!sponsorAmount) {
     tools.log.debug('Author is not a sponsor! Nothing left to do.')
     return
   }
 
   // Add the label
   await createLabel(tools)
-  await addLabel(tools, amount)
+  await addLabel(tools, sponsorAmount)
   tools.log.success('Label successfully applied. Have a nice day!')
 }, {
   event: [
