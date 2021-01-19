@@ -21,9 +21,3 @@ jobs:
     - run: npm ci
     # Make sure that it can build
     - run: npm run build
-    # Run tests
-    - run: npm test
-    - name: codecov
-      run: npx codecov
-      env:
-        CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
