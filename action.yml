@@ -1,20 +1,19 @@
 name: Sponsor Labels
 description: Labels issues and pull requests if the author is a sponsor
 inputs:
-  color: 
-    description: >-
-      Background color used by both labels.
-    default: "ea4aaa"
+  color:
+    description: Background color used by both labels.
+    default: ea4aaa
   label:
     description: >-
       The label to apply to the issue or pull request if the author is a
       sponsor.
-    default: "sponsor 🤍"
+    default: "sponsor \U0001F90D"
   superlabel:
     description: >-
-      The label to apply to the issue or pull request if the author is a
-      sponsor that contributed more than a certain amount.
-    default: "sponsor 💛"
+      The label to apply to the issue or pull request if the author is a sponsor
+      that contributed more than a certain amount.
+    default: "sponsor \U0001F49B"
   superamount:
     description: >-
       Threshold amount which causes a sponsor to be labeled with superlabel 
